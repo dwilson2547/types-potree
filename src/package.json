@@ -1,0 +1,14 @@
+{
+  "name": "types-potree",
+  "version": "1.0.0",
+  "description": "Typings library for potree js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Wilson",
+  "license": "MIT",
+  "dependencies": {
+    "@types/three": "^0.93.3"
+  }
+}
