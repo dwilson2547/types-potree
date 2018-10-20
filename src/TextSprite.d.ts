@@ -1,6 +1,17 @@
 import THREE from "./node_modules/@types/three";
 
 export class TextSprite extends THREE.Object3D {
+
+    material: THREE.Material;
+    sprite: THREE.Sprite;
+    borderThickness: number;
+    fontface: string;
+    fontsize: number;
+    borderColor: THREE.Color;
+    backgroundColor: THREE.Color;
+    textColor: THREE.Color;
+    text: string;
+
     constructor(text: string);
 
     setText(text: string): void;

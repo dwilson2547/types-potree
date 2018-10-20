@@ -1,6 +1,11 @@
 import THREE from './node_modules/@types/three';
 
 export class Utils {
+
+    screenScene: THREE.Scene;
+    screenQuad: THREE.Mesh;
+    camera: THREE.Camera;
+
     loadShapefileFeatures(file, callback: Function): void;
 
     static toString(value: THREE.Vector3 | any): string;
