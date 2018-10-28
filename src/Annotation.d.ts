@@ -1,4 +1,5 @@
 import { EventDispatcher } from "./EventDispatcher";
+import THREE from "./node_modules/@types/three";
 
 export class Annotation extends EventDispatcher {
     

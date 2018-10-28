@@ -52,7 +52,7 @@ export class Utils {
 
     static createBackgroundTexture(width: number, height: number): THREE.DataTexture;
 
-    static getMousePointCloudIntersection (mouse: THREE.Vector3, camera: Camera, viewer: Viewer, pointclouds: Array<PointCloud>, params: any): {location: THREE.Vector3, distance: number, pointCloud: PointCloud, point: Point} | null;
+    static getMousePointCloudIntersection (mouse: THREE.Vector3, camera:THREE.Camera, viewer: Viewer, pointclouds: Array<PointCloud>, params: any): {location: THREE.Vector3, distance: number, pointCloud: PointCloud, point: Point} | null;
 
     static pixelsArrayToImage(pixels: pixels, width: number, height: number): HTMLImageElement;
 

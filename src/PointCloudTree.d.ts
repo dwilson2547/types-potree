@@ -1,5 +1,5 @@
 import { EventDispatcher } from "./EventDispatcher";
-import THREE from "./node_modules/@types/three";
+import THREE from "three";
 
 export class PointCloudTreeNode extends EventDispatcher {
 
