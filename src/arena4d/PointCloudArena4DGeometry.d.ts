@@ -1,4 +1,6 @@
 import { EventDispatcher } from "../EventDispatcher";
+import THREE from '../node_modules/@types/three';
+import { PointAttributes } from '../loader/PointAttributes';
 
 export class PointCloudArena4DGeometryNode {
     

@@ -1,4 +1,8 @@
 import THREE from './node_modules/@types/three';
+import { Viewer } from './viewer/viewer';
+import { Scene } from './viewer/Scene';
+import { Renderer } from './PotreeRenderer';
+import { Measure } from './utils/Measure';
 
 export class Utils {
 
@@ -52,13 +56,13 @@ export class Utils {
 
     static createBackgroundTexture(width: number, height: number): THREE.DataTexture;
 
-    static getMousePointCloudIntersection (mouse: THREE.Vector3, camera:THREE.Camera, viewer: Viewer, pointclouds: Array<PointCloud>, params: any): {location: THREE.Vector3, distance: number, pointCloud: PointCloud, point: Point} | null;
+    static getMousePointCloudIntersection (mouse: THREE.Vector3, camera:THREE.Camera, viewer: Viewer, pointclouds: Array<any>, params: any): {location: THREE.Vector3, distance: number, pointCloud: any, point: any} | null;
 
-    static pixelsArrayToImage(pixels: pixels, width: number, height: number): HTMLImageElement;
+    static pixelsArrayToImage(pixels: any, width: number, height: number): HTMLImageElement;
 
-    static pixelsArrayToDataUrl(pixels: pixels, width: number, height: number): string;
+    static pixelsArrayToDataUrl(pixels: any, width: number, height: number): string;
 
-    static pixelsArrayToCanvas(pixels: pixels, width: number, height: number): HTMLCanvasElement;
+    static pixelsArrayToCanvas(pixels: any, width: number, height: number): HTMLCanvasElement;
 
     static removeListeners(dispatcher: any, type: string): void;
 
@@ -109,5 +113,5 @@ export class Utils {
 
     screenPass(): void;
 
-    render(renderer: renderer, material: THREE.Material, target: any);
+    render(renderer: Renderer, material: THREE.Material, target: any);
 }

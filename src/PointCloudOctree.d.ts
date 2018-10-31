@@ -4,6 +4,7 @@ import { Utils } from './Utils';
 import { PointCloudMaterial } from './materials/PointCloudMaterial';
 import THREE, { WebGLRenderer } from './node_modules/@types/three';
 import { ProfileRequest } from './ProfileRequest';
+import { Viewer } from './viewer/viewer';
 
 export class PointCloudOctreeNode extends PointCloudTreeNode {
 

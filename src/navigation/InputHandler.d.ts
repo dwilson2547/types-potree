@@ -48,7 +48,7 @@ export class InputHandler extends EventDispatcher {
 
     startDragging(object: any, args: any): void;
 
-    getMousePointCloudIntersection(mouse: THREE.Vector2): {location: THREE.Vector3, distance: number, pointCloud: PointCloud, point: Point} | null;
+    getMousePointCloudIntersection(mouse: THREE.Vector2): {location: THREE.Vector3, distance: number, pointCloud: any, point: any} | null;
 
     toggleSelection(object: any): void;
 
