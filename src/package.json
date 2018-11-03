@@ -9,6 +9,8 @@
   "author": "Daniel Wilson",
   "license": "MIT",
   "dependencies": {
+    "@types/openlayers": "^4.6.12",
+    "@types/proj4": "^2.3.4",
     "@types/three": "^0.93.3"
   }
 }

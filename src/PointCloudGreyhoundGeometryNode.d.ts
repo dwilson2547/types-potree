@@ -30,5 +30,23 @@ export class PointCloudGreyhoundGeometryNode extends PointCloudTreeNode {
 
     getBoundingSphere(): any;
 
-    
+    getBoundingBox(): any;
+
+    getLevel(): any;
+
+    getChildren(): Array<any>;
+
+    getURL(): string;
+
+    addChild(child: any): void;
+
+    load(): void;
+
+    loadPoints(): void;
+
+    loadHierarchyThenPoints(): any;
+
+    getNumPoints(): number;
+
+    dispose(): void;
 }

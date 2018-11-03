@@ -1,4 +1,9 @@
 export class Version {
+
+    version: string;
+    versionMajor: string;
+    versionMinor: string;
+
     constructor(version: string);
 
     newerThan(version: string): boolean;
