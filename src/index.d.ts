@@ -1,4 +1,3 @@
-
-export * from './Points';
+export * from './Potree';
 
 export as namespace potree;
